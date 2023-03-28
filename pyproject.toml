@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "alter-solutions-exercise-1"
+version = "1"
+description = ""
+authors = ["Daria Neznaeva <darianeznaeva@gmail.com>"]
+readme = "README.md"
+packages = [{include = "alter_solutions_exercise_1"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+black = "^23.1.0"
+isort = "^5.12.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
