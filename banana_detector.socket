@@ -1,0 +1,10 @@
+[Unit]
+Description=Banana Service Socket
+
+[Socket]
+ListenStream=6987
+BindIPv6Only=both
+Backlog=100
+
+[Install]
+WantedBy=sockets.target

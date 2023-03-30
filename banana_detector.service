@@ -1,9 +1,15 @@
 [Unit]
 Description=Banana Service
+After=network.target
 
 [Service]
+Type=simple
 ExecStart=/bin/bash -c 'python3 /usr/local/bin/banana_detector.py < /dev/null'
 Restart=always
+RestartSec=1
+StandardInput=socket
+StandardOutput=journal+console
+Sockets=tcp-socket
 
 [Install]
 WantedBy=multi-user.target

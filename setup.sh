@@ -18,3 +18,13 @@ sudo systemctl enable banana_detector
 
 # Start the service
 sudo systemctl start banana_detector
+
+# Enable the socket
+sudo systemctl enable banana_detector.socket
+
+# Start the socket
+sudo systemctl start banana_detector.socket
+
+# Configure the firewall
+sudo ufw allow from 192.168.0.0/16 to any port 6987
+sudo ufw --force enable
