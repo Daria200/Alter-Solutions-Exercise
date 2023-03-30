@@ -28,6 +28,15 @@ sudo systemctl enable banana_detector
 # Start the service
 sudo systemctl start banana_detector
 
+# Get the firewall service
+sudo yum install firewalld
+
+# Start the service
+sudo systemctl start firewalld
+
+# Enable the service
+sudo systemctl enable firewalld
+
 # Configure the firewall
 sudo firewall-cmd --add-port=6987/tcp --permanent
 sudo firewall-cmd --reload
