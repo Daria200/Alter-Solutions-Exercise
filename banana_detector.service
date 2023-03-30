@@ -4,9 +4,10 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/bin/bash -c 'python3 /usr/local/bin/banana_detector.py < /dev/null'
+ExecStart=/bin/bash -c 'python3 /usr/local/bin/banana_detector.py'
 Restart=always
 Sockets=banana_detector.socket
+StandardInput=socket
 
 [Install]
 WantedBy=multi-user.target
