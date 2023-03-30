@@ -10,6 +10,9 @@ sudo cp service/banana_detector.py /usr/local/bin/
 # Copy the systemd service configuration file to /etc/systemd/system
 sudo cp banana_detector.service /etc/systemd/system/
 
+# Copy the socket configuration file to /etc/systemd/system
+sudo cp banana_detector.socket /etc/systemd/system/
+
 # Reload systemd configuration
 sudo systemctl daemon-reload
 
