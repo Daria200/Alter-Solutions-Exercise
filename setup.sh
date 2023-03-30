@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Install python3
-sudo apt-get update
-sudo apt-get install python3 -y
+sudo yum update
+sudo yum install python3 -y
 
 # Copy the Python script to /usr/local/bin
 sudo cp service/banana_detector.py /usr/local/bin/
