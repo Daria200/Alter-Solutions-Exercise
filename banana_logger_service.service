@@ -1,0 +1,9 @@
+[Unit]
+Description=Banana Service
+
+[Service]
+ExecStart=/bin/bash -c 'python3 /usr/local/bin/banana_detector.py < /dev/null'
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
