@@ -2,9 +2,7 @@
 Description=Banana Service Socket
 
 [Socket]
-ListenStream=6987
-BindIPv6Only=both
-Backlog=100
+ListenStream=127.0.0.1:6987
 
 [Install]
 WantedBy=sockets.target
